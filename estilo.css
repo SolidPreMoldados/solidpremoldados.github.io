@@ -1,0 +1,179 @@
+/* Importa uma fonte profissional do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* Estilos Globais */
+body {
+    background-color: #eef0f2;
+    font-family: 'Poppins', sans-serif;
+    color: #1c1e21;
+    margin: 0;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho com Logo e Perfil */
+header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    max-width: 180px;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+
+header p {
+    font-size: 1em;
+    color: #555;
+    margin: 0;
+}
+
+/* Estilos dos Botões */
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #ffffff;
+    padding: 16px;
+    margin: 15px 0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.btn i {
+    margin-right: 12px;
+    font-size: 1.2em;
+}
+
+/* Cores específicas para botões de ação */
+.btn-whatsapp { background-color: #25D366; }
+.btn-phone { background-color: #34B7F1; }
+
+/* Estilo do botão secundário */
+.btn-secondary {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+}
+
+/* Seções de Ações */
+.actions {
+    margin: 20px 0;
+}
+
+/* Galeria de Imagens */
+.gallery {
+    margin: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 40px;
+}
+
+.extra-contacts {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.extra-contacts a {
+    color: #555;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.extra-contacts a:hover {
+    text-decoration: underline;
+}
+
+.extra-contacts .btn-secondary {
+    padding: 10px 16px;
+    font-size: 0.9em;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.8em;
+    margin: 0 10px;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Media Queries para Responsividade */
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    .btn {
+        font-size: 1.1em;
+        padding: 18px;
+    }
+    
+    .extra-contacts .btn-secondary {
+        font-size: 1em;
+        padding: 12px 18px;
+    }
+}
